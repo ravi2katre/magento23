@@ -31,4 +31,5 @@ class View extends \Magento\Framework\App\Action\Action
        $data = ['message' => 'Hello world!'];
 
 return $result->setData($data);
-} }
+} 
+}
