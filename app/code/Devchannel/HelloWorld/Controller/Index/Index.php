@@ -1,11 +1,11 @@
 <?php
 
-namespace Tiu\Ravi\Controller\Page;
+namespace Devchannel\HelloWorld\Controller\Index;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\Controller\ResultFactory;
 
-class View extends Action
+class Index extends Action
 {
     public function execute()
     {
