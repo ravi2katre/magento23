@@ -9,7 +9,8 @@
     <menu>
         <add id="Tiu_Ravi::tiu" title="Tiu" translate="tiu" module="Tiu_Ravi" sortOrder="20" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu"/>
 		<add id="Tiu_Ravi::ravi" title="Ravi" translate="tiu" module="Tiu_Ravi" sortOrder="20" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu"/>
-		<add id="Tiu_Ravi::ravi_demo" title="Home" translate="tiu" module="Tiu_Ravi" sortOrder="20" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/home"/>
+		<add id="Tiu_Ravi::ravi_index" title="Index" translate="tiu" module="Tiu_Ravi" sortOrder="20" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/demo" />
+        <add id="Tiu_Ravi::ravi_home" title="Home" translate="tiu" module="Tiu_Ravi" sortOrder="20" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/home" />
         
     </menu>
 </config>
