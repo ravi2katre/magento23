@@ -93,5 +93,37 @@
     ],
     "extra": {
         "magento-force": "override"
+    },
+    "scripts": {
+        
+        "cache:clean ":[
+            "php bin/magento cache:clean"
+        ],
+        "cache:flush":"php bin/magento cache:flush",
+        "module:status":"php bin/magento module:status",
+        "indexer:reindex":"php bin/magento indexer:reindex",
+        "setup:upgrade": [
+            "php bin/magento cache:clean",
+            "php bin/magento setup:upgrade"
+            
+        ],
+        "setup:di:compile":[
+            "php bin/magento cache:clean",
+            "php bin/magento cache:flush",
+            "php bin/magento setup:di:compile", 
+            "php bin/magento setup:upgrade",
+            "php bin/magento setup:static-content:deploy -f",
+            "php bin/magento setup:static-content:deploy -f"
+        ],
+        "setup:static-content:deploy -f":"php bin/magento setup:static-content:deploy -f",
+        "deploy:mode:show":"php bin/magento deploy:mode:show",
+        "deploy:mode:set developer":"php bin/magento deploy:mode:set developer",
+        "dev:template-hints:enable":"php bin/magento dev:template-hints:enable",
+        "dev:template-hints:disable":"php bin/magento dev:template-hints:disable",
+        "grunt clean:lumachild": "grunt clean:lumachild",
+        "grunt exec:lumachild": "grunt exec:lumachild",
+        "grunt less:lumachild": "grunt less:lumachild",
+        "grunt watch": "grunt watch"
+        
     }
 }
