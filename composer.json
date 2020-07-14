@@ -10,7 +10,13 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "require": {
+    "replace": {
+        "dotmailer/dotmailer-magento2-extension": "*",
+        "dotmailer/dotmailer-magento2-extension-package": "*",
+        "dotmailer/dotmailer-magento2-extension-enterprise": "*",
+        "dotmailer/dotmailer-magento2-extension-chat": "*"
+    },
+    "require": {        
         "magento/module-bundle-sample-data": "100.3.*",
         "magento/module-catalog-rule-sample-data": "100.3.*",
         "magento/module-catalog-sample-data": "100.3.*",
