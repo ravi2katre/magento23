@@ -1,0 +1,11 @@
+<p> home phtml </p>
+<?php
+$DemoBlockObj= $block->getLayout()->createBlock('Tiu\Ravi\Block\Frontend\Page\DemoBlock');
+echo $DemoBlockObj->getVariableValue('id-1001');
+
+echo $this->helper('Tiu\Ravi\Helper\Data')->getConfig('web/seo/use_rewrites');
+echo $this->helper('Tiu\Ravi\Helper\Data')->getConfig('Tiu/config/display_text');
+
+
+
+?>

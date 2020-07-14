@@ -1,0 +1,17 @@
+<p> Demo Block Phtml</p>
+<?php
+//$data = $block->getData();
+//print_r($data);
+echo $block->getData('block_id');
+?>
+
+<script>
+require([
+    'jquery',
+    'accordion' // the alias for "mage/accordion"
+], function($) {
+    $(function() { // to ensure that code evaluates on page load
+        alert("i am on phtml file");
+    });
+});
+</script>

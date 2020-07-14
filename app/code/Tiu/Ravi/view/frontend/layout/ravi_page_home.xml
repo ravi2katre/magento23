@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="ravi_page_home"
+                   template="Tiu_Ravi::page/home.phtml" >
+                  
+            </block>
+
+             <block class="Tiu\Ravi\Block\Frontend\Page\DemoBlock" name="ravi_pblock_DemoBlock"  template="Tiu_Ravi::page/DemoBlock.phtml" >
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">block1</argument>
+                    </arguments>
+                    <argument name="custom_array" xsi:type="array">
+                        <item name="array_key_one" xsi:type="string">First Item</item>
+                        <item name="array_key_two" xsi:type="string">Second Item</item>
+                    </argument>
+            </block>
+
+        </referenceContainer>
+    </body>
+</page>

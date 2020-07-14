@@ -1,0 +1,83 @@
+<div class="wk-mp-design">
+    <fieldset class="fieldset info wk-mp-fieldset">
+        <legend class="legend">
+            <span><?php echo __('Quote Request') ?></span>
+        </legend>
+        <form
+            action="<?php echo $block->getUrl('quote/contact/save', ['_secure' => $this->getRequest()->isSecure()]) ?>"
+            enctype="multipart/form-data" method="post" id="quote-request" data-form="quote-request"
+            data-mage-init='{"validation":{}}'
+            data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>">
+            <div class="field required">
+                <label class="label"><?php echo __('Full Name') ?>:</label>
+                <div class="control">
+                    <input type="text" id="full_name" name="full_name" title="Full Name" class="input-text"
+                        class="input-text" data-validate="{required:true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label"><?php echo __('Street Address') ?>:</label>
+                <div class="control">
+                    <input type="text" id="street_address" name="street_address" title="Street Address"
+                        class="input-text" class="input-text" class="input-text" data-validate="{required:true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label"><?php echo __('Suburb') ?>:</label>
+                <div class="control">
+                    <input type="text" id="district" name="district" title="Suburb" class="input-text"
+                        class="input-text" data-validate="{required:true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label"><?php echo __('Post Code') ?>:</label>
+                <div class="control">
+                    <input type="text" id="post_code" name="post_code" title="Post Code" class="input-text"
+                        class="input-text" class="input-text" class="input-text" data-validate="{required:true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label"><?php echo __('Phone Number') ?>:</label>
+                <div class="control">
+                    <input type="text" id="phone_number" name="phone_number" title="Phone Number" class="input-text"
+                        class="input-text" class="input-text" class="input-text"
+                        data-validate="{required:true, 'validate-number':true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <label class="label"><?php echo __('Email Address') ?>:</label>
+                <div class="control">
+                    <input type="email" id="email" name="email" title="Email Address" class="input-text"
+                        class="input-text" class="input-text" class="input-text" class="input-text"
+                        data-validate="{required:true, 'validate-email':true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <?php echo __("Please attach any photo's that will help describe your job.(Max 5 images/3Mb of data. JPGS Only)") ?>
+                <div class="control">
+                    <input type="file" id="attachment" name="attachment" title="Attachment" class="input-text"
+                        class="input-text" data-validate="{required:true}" />
+                </div>
+            </div>
+            <div class="field required">
+                <div class="control">
+                    <textarea name="description" id="description" class="input-text" class="input-text"
+                        data-validate="{required:true}"></textarea>
+                </div>
+            </div>
+            <button class="button wk-mp-btn" title="<?php echo __('Submit') ?>" type="submit" id="submit-btn">
+                <span><span><?php echo __('Submit') ?></span></span>
+            </button>
+            <button class="button wk-mp-btn" title="<?php echo __('Reset') ?>">
+                <span><span><?php echo __('Reset') ?></span></span>
+            </button>
+        </form>
+    </fieldset>
+</div>
+<script type="text/x-magento-init">
+    {
+        "#quote-request": {
+            "validation": {}
+        }
+    }
+</script>

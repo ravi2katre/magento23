@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Tiu_Ravi::tiu" title="Tiu" translate="tiu" module="Tiu_Ravi" sortOrder="90" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu"/>
+		<add id="Tiu_Ravi::ravi" title="Ravi" translate="tiu" module="Tiu_Ravi" sortOrder="91" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu"/>
+		<add id="Tiu_Ravi::ravi_demo_index" title="Index" translate="tiu" module="Tiu_Ravi" sortOrder="92" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/demo/index" />
+        <add id="Tiu_Ravi::ravi_home_index" title="Home" translate="tiu" module="Tiu_Ravi" sortOrder="93" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/home/index" />
+        <add id="Tiu_Ravi::ravi_listing_listindex" title="Listing" translate="tiu" module="Tiu_Ravi" sortOrder="93" dependsOnModule="Tiu_Ravi" resource="Tiu_Ravi::tiu" parent="Tiu_Ravi::tiu" action="ravi/listing/listindex" />
+        
+    </menu>
+</config>

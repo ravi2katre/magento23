@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+    /**
+     * Webkul Grid DI
+     *
+     * @category    Webkul
+     * @package     Webkul_Grid
+     * @author      Webkul Software Private Limited
+     *
+     */
+ -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ravi_listing_listindex_data_source" xsi:type="string">Tiu\Ravi\Model\ResourceModel\TiuRaviTopics\Collection\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Tiu\Ravi\Model\ResourceModel\TiuRaviTopics\Collection\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">tiu_ravi_topics</argument>
+            <argument name="resourceModel" xsi:type="string">Tiu\Ravi\Model\ResourceModel\TiuRaviTopics\Collection</argument>
+        </arguments>
+    </virtualType>
+    
+	<preference for="Tiu\Ravi\Api\Data\ListingInterface" type="Tiu\Ravi\Model\TiuRaviTopics"/>
+    
+    <type name="Magento\Catalog\Block\Product\ListProduct">
+      <plugin name="Tiu_Ravi_Block_Product_ListProduct" type="Tiu\Ravi\Block\Product\ListProduct" sortOrder="1" disabled="false" />
+    </type>
+    
+   
+</config>
