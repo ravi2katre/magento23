@@ -101,6 +101,13 @@
         "magento-force": "override"
     },
     "scripts": {
+        "permitions":[
+            "chmod -R 777 app/etc",
+            "chmod -R 777 var",
+            "chmod -R 777 pub/media",
+            "chmod -R 777 pub/static",
+            "chmod -R 777 generated"
+        ],
         "cache:clean config":[
             "php bin/magento cache:clean config"
         ],
