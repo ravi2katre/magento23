@@ -101,7 +101,9 @@
         "magento-force": "override"
     },
     "scripts": {
-        
+        "cache:clean config":[
+            "php bin/magento cache:clean config"
+        ],
         "cache:clean ":[
             "php bin/magento cache:clean"
         ],

@@ -15,7 +15,7 @@ use Magento\Framework\Controller\ResultFactory;
  */
 class Listindex extends Action implements HttpGetActionInterface
 {
-    const MENU_ID = 'Tiu_Ravi::greetings_helloworld';
+    const MENU_ID = 'Tiu_Ravi::ravi_listing_listindex';
     protected $TiuRaviTopicsFactory;
     protected $resultRedirect;
 
@@ -50,10 +50,11 @@ class Listindex extends Action implements HttpGetActionInterface
      */
     public function execute()
     {       
+        //echo $this::MENU_ID; exit;
         
         $resultPage = $this->resultPageFactory->create();
         //Set the menu which will be active for this page
-        $resultPage->setActiveMenu('Tiu_Ravi::demo');
+        $resultPage->setActiveMenu($this::MENU_ID);
                 
         //Set the header title of grid
         //$resultPage->getConfig()->getTitle()->prepend(__('Manage Demo'));

@@ -101,7 +101,34 @@
                 </item>
             </argument>
         </column>
-       
+        <column name="firstname">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="label" xsi:type="string" translate="true">firstname</item>
+                </item>
+            </argument>
+        </column>
+       <column name="email">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="label" xsi:type="string" translate="true">email</item>
+                </item>
+            </argument>
+        </column>
         <!-- Add Action with each row of grid and for this we will create a class Action -->
        <actionsColumn name="actions" class="Tiu\Ravi\Ui\Component\Listing\Column\Action">
            <argument name="data" xsi:type="array">
