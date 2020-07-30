@@ -2,7 +2,7 @@
 ## overrides deployment configuration mode value
 ## use command bin/magento deploy:mode:set to switch modes
 
-#   SetEnv MAGE_MODE developer
+   SetEnv MAGE_MODE developer
 
 ############################################
 ## uncomment these lines for CGI mode
@@ -147,7 +147,7 @@
 ## you can put here your magento root folder
 ## path relative to web root
 
-    #RewriteBase /magento/
+    RewriteBase /git/magento23/
 
 ############################################
 ## workaround for HTTP authorization

@@ -9,13 +9,7 @@
             </block>
 
              <block class="Tiu\Ravi\Block\Frontend\Page\DemoBlock" name="ravi_pblock_DemoBlock"  template="Tiu_Ravi::page/DemoBlock.phtml" >
-                    <arguments>
-                        <argument name="block_id" xsi:type="string">block1</argument>
-                    </arguments>
-                    <argument name="custom_array" xsi:type="array">
-                        <item name="array_key_one" xsi:type="string">First Item</item>
-                        <item name="array_key_two" xsi:type="string">Second Item</item>
-                    </argument>
+                   
             </block>
 
         </referenceContainer>
